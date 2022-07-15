@@ -6,18 +6,18 @@ option java_package = "io.proto";
 option java_outer_classname = "DashboardProto";
 option go_package = "github.com/GrayFlash/proto_test";
 
-import "odpf/assets/facets/v1beta1/ownership.proto";
-import "odpf/assets/facets/v1beta1/lineage.proto";
-import "odpf/assets/facets/v1beta1/properties.proto";
+// import "odpf/assets/facets/v1beta1/ownership.proto";
+// import "odpf/assets/facets/v1beta1/lineage.proto";
+// import "odpf/assets/facets/v1beta1/properties.proto";
 
-import "odpf/assets/common/v1beta1/resource.proto";
-import "odpf/assets/common/v1beta1/timestamp.proto";
-import "odpf/assets/common/v1beta1/event.proto";
+// import "odpf/assets/common/v1beta1/resource.proto";
+// import "odpf/assets/common/v1beta1/timestamp.proto";
+// import "odpf/assets/common/v1beta1/event.proto";
 
 // Dashboard is a resource that represents a dashboard.
 message Dashboard {
     // Representation of the resource
-  odpf.assets.common.v1beta1.Resource resource = 1;
+  // odpf.assets.common.v1beta1.Resource resource = 1;
 
   // The list of the charts in the dashboard.
   // For an example, check the schema of the chart.
@@ -25,23 +25,23 @@ message Dashboard {
 
   // The ownership of the dashboard.
   // For an example check out ownership.
-  odpf.assets.facets.v1beta1.Ownership ownership = 31;
+  // odpf.assets.facets.v1beta1.Ownership ownership = 31;
 
-  // List of the user's custom properties.
-  // Properties facet can be used to set custom properties, tags and labels for a user.
-  odpf.assets.facets.v1beta1.Properties properties = 32;
+  // // List of the user's custom properties.
+  // // Properties facet can be used to set custom properties, tags and labels for a user.
+  // odpf.assets.facets.v1beta1.Properties properties = 32;
 
-  // The timestamp of the user's creation.
-  // Timstamp facet can be used to set the creation and updation timestamp of a user.
-  odpf.assets.common.v1beta1.Timestamp timestamps = 33;
+  // // The timestamp of the user's creation.
+  // // Timstamp facet can be used to set the creation and updation timestamp of a user.
+  // odpf.assets.common.v1beta1.Timestamp timestamps = 33;
 
-  // The lineage of the dashboard.
-  // For an example check out lineage schema.
-  odpf.assets.facets.v1beta1.Lineage lineage = 34;
+  // // The lineage of the dashboard.
+  // // For an example check out lineage schema.
+  // odpf.assets.facets.v1beta1.Lineage lineage = 34;
 
   // The timestamp of the generated event.
   // Event schemas is defined in the common event schema.
-  odpf.assets.common.v1beta1.Event event = 100;
+  // odpf.assets.common.v1beta1.Event event = 100;
 
 }
 
@@ -88,22 +88,22 @@ message Chart {
 
   // The ownership of the dashboard.
   // For an example check out ownership.
-  odpf.assets.facets.v1beta1.Ownership ownership = 31;
+  // odpf.assets.facets.v1beta1.Ownership ownership = 31;
 
-  // The lineage of the chart.
-  // For an example check out lineage schema.
-  odpf.assets.facets.v1beta1.Lineage lineage = 32;
+  // // The lineage of the chart.
+  // // For an example check out lineage schema.
+  // odpf.assets.facets.v1beta1.Lineage lineage = 32;
 
-  // List of the user's custom properties.
-  // Properties facet can be used to set custom properties, tags and labels for a dashboard.
-  odpf.assets.facets.v1beta1.Properties properties = 33;
+  // // List of the user's custom properties.
+  // // Properties facet can be used to set custom properties, tags and labels for a dashboard.
+  // odpf.assets.facets.v1beta1.Properties properties = 33;
 
-  // The timestamp of the user's creation.
-  // Timstamp facet can be used to set the creation and updation timestamp of a dashboard.
-  odpf.assets.common.v1beta1.Timestamp timestamps = 34;
+  // // The timestamp of the user's creation.
+  // // Timstamp facet can be used to set the creation and updation timestamp of a dashboard.
+  // odpf.assets.common.v1beta1.Timestamp timestamps = 34;
 
-  // The timestamp of the generated event.
-  // Event schemas is defined in the common event schema.
-  odpf.assets.common.v1beta1.Event event = 100;
+  // // The timestamp of the generated event.
+  // // Event schemas is defined in the common event schema.
+  // odpf.assets.common.v1beta1.Event event = 100;
 
 }
